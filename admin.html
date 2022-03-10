@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ADMIN CAKE KERIA?</title>
+    </head>
+    <body>
+        <div id="nav-desktop" class="nav nav--desktop nav--top">
+            <nav class="navbar navbar--desktop">
+                <a id="home-icon" href="index.html" class="navbar__item navbar__option navbar__logo" aria-label="CAKE KERIA?">
+                    <div class="navbar__title">
+                        <img class="navbar__title__icon navbar__title__icon--desktop" src="./img/CAKE-KERIA LOGO.png" alt="CAKE KERIA? LOGO" width="163" height="120"> 
+                    </div>
+                </a>
+                <div class="navbar--wrap">
+                    <div style="display: flex; height: inherit">
+                    <li><a class="navbar__item navbar__option" href="ORDERSTATUS.html"> ORDERS STATUS </a><br></li>
+                    <li></li><a class="navbar__item navbar__option" href="INVENTORY.html"> INVENTORY </a></li>
+                    <li><a class="navbar__item navbar__option" href="EMPLOYEES.html"> EMPLOYEES </a></li>
+                    </div>
+                
+                    <div class="INVENTORY">
+                        <h1>INVENTORY</h1>
+                        <br>
+                        <form onsubmit="enviaFormulario(); return false;" id="forma" method="post">
+                          <table>
+                            <tr>
+                              <th colspan="2">INVENTORY</th>
+                            </tr>                  
+                            <tr>
+                              <th>INGREDIENT</th>
+                              <th>UNIT</th>
+                              <th>QUANTITY</th>
+                            </tr>
+                            <tr>
+                              <td>
+                                MILK
+                              </td>
+                              <td>
+                                L
+                              </td>
+                              <td>
+                                <input type="number" id="milk" name="milk" value= "100" class="inputform left"/>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                FLOUR
+                              </td>
+                              <td>
+                                KG
+                              </td>
+                              <td>
+                                <input type="number" id="flour" name="flour" value= "120" class="inputform rigth"/>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                EGGS
+                              </td>
+                              <td>
+                                PC
+                              </td>
+                              <td>
+                                <input type="number" id="Eggs" name="Eggs" value= "150" class="inputform rigth"/>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                SUGAR
+                              </td>
+                              <td>
+                                KG
+                              </td>
+                              <td>
+                                <input type="number" id="sugar" name="sugar" value= "70" class="inputform rigth"/>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                VANILLA
+                              </td>
+                              <td>
+                                L
+                              </td>
+                              <td>
+                                <input type="number" id="vanilla" name="vanilla" value= "10" class="inputform rigth"/>
+                              </td>
+                            </tr>       
+                            <tr>
+                                <td>
+                                  BUTTER
+                                </td>
+                                <td>
+                                  KG
+                                </td>
+                                <td>
+                                  <input type="number" id="butter" name="butter" value= "10" class="inputform rigth"/>
+                                </td>
+                            </tr>  
+                            <tr>
+                                <td>
+                                  COCOA POWDER
+                                </td>
+                                <td>
+                                  KG
+                                </td>
+                                <td>
+                                  <input type="number" id="cocoa" name="cocoa" value= "10" class="inputform rigth"/>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                LIQUID RED COLOR
+                                </td>
+                                <td>
+                                  ML
+                                </td>
+                                <td>
+                                  <input type="number" id="redcolor" name="redcolor" value= "500" class="inputform rigth"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                LIQUID RED COLOR
+                                </td>
+                                <td>
+                                  ML
+                                </td>
+                                <td>
+                                  <input type="number" id="redcolor" name="redcolor" value= "500" class="inputform rigth"/>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                CARROT
+                                </td>
+                                <td>
+                                  KG
+                                </td>
+                                <td>
+                                  <input type="number" id="carrot" name="carrot" value= "30" class="inputform rigth"/>
+                                </td>
+                            </tr>     
+                            <th>DECORATIONS</th>          
+                            <tr>
+                                <td>
+                                SPRINKLES
+                                </td>
+                                <td>
+                                  KG
+                                </td>
+                                <td>
+                                  <input type="number" id="Sprinkles" name="Sprinkles" value= "2" class="inputform rigth"/>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                CHOCOLATE CHIPS
+                                </td>
+                                <td>
+                                  KG
+                                </td>
+                                <td>
+                                  <input type="number" id="chocolatechips" name="chocolatechips" value= "2" class="inputform rigth"/>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                STRAWBERRIES
+                                </td>
+                                <td>
+                                  KG
+                                </td>
+                                <td>
+                                  <input type="number" id="Strawberries" name="Strawberries" value= "5" class="inputform rigth"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                FONDANT
+                                </td>
+                                <td>
+                                  KG
+                                </td>
+                                <td>
+                                  <input type="number" id="Strawberries" name="Strawberries" value= "5" class="inputform rigth"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                BUTTER CREAM
+                                </td>
+                                <td>
+                                  L
+                                </td>
+                                <td>
+                                  <input type="number" id="butter cream" name="butter cream" value= "10" class="inputform rigth"/>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td><button type="print">PRINT</td>
+                            </tr>
+                          </table>
+                        </form>              
+                      </div>
+                      <div class="col-4">
+                        <table class="ORDERS">
+                          <tr>
+                            <th colspan="4">ORDERS</th>
+                          </tr>                  
+                          <tr>
+                            <th>ORDER #</th>
+                            <th>NAME</th>
+                            <th>CAKE</th>
+                            <th>STATUS</th>
+                            <th>DATE</th>
+                          </tr>
+                          <tr>
+                            <td>
+                              CK00001
+                            </td>
+                            <td>
+                              JANE DOE
+                            </td>
+                            <td>
+                              VANILLA CONFETTI
+                            </td>
+                            <td>
+                              DELIVERED
+                            </td>
+                            <td>
+                            MARCH03/22 15:32
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              CK00002
+                            </td>
+                            <td>
+                              JANE DOE
+                            </td>
+                            <td>
+                              PERSONALIZED
+                            </td>
+                            <td>
+                              DELIVERED
+                            </td>
+                            <td>
+                            MARCH03/22 18:20
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              CK00003
+                            </td>
+                            <td>
+                              JAMIE SANDERS
+                            </td>
+                            <td>
+                              CARROT 
+                            </td>
+                            <td>
+                              IN PROCESS
+                            </td>
+                            <td>
+                            MARCH04/22 20:00
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              CK00004
+                            </td>
+                            <td>
+                              JENN SMITH
+                            </td>
+                            <td>
+                              CHOCOLATE 
+                            </td>
+                            <td>
+                            CANCELED
+                            </td>
+                            <td>
+                            -----
+                            </td>
+                          </tr>             
+                        </table>
+                      </div>
+
+                </div>
+            </nav>
+        </div>
+    </body>
+    <footer class="footer">
+        <p class="contact">
+          &#169; Contact: 55 5555 5555 Email:
+          <a href="contact@cakekeria.com" class="contactemail" target="_blank">
+            contact@cakekeria.com
+          </a>
+          <br>
+            2305 E. 4th Street
+            Los Angeles, CA 90033          
+        </p>
+      </footer> 
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CAKE KERIA?</title>
+    </head>
+    <body>
+        <div id="nav-desktop" class="nav nav--desktop nav--top">
+            <nav class="navbar navbar--desktop">
+                <a id="home-icon" href="index.html" class="navbar__item navbar__option navbar__logo" aria-label="CAKE KERIA?">
+                    <div class="navbar__title">
+                        <img class="navbar__title__icon navbar__title__icon--desktop" src="./img/CAKE-KERIA LOGO.png" alt="CAKE KERIA? LOGO" width="163" height="120"> 
+                    </div>
+                </a>
+                <div class="navbar--wrap">
+                    <div style="display: flex; height: inherit">
+                    <li><a class="navbar__item navbar__option" href="aboutus.html"> ABOUT US </a><br></li>
+                    <li></li><a class="navbar__item navbar__option" href="menu.html"> MENU </a></li>
+                    <li><a class="navbar__item navbar__option" href="order.html"> ORDER </a></li>
+                    <li><a class="navbar__item navbar__option" href="contact.html"> CONTACT </a></li>
+                    </div>
+                </div>
+                <div style="display: flex; height: inherit; align-items: center;">
+                    <div class="orderbar__item">
+                    <button class="orderbar__language" id="languagebutton" aria-label="languagebutton">
+                        <div class="orderbar__language__name">EN</div>
+                        <svg id="languagesvg" xmlns="http://www.w3.org/2000/svg" width="13" height="8" class="orderbar__language__select__arrow orderbar__language__select__arrow--">
+                        <path fill="none" stroke="#fdc400" d="M0 1l6.15 6L12 1"></path>
+                        </svg>
+                    </button>
+                    <ul id="languagedropdown" class="orderbar__language__select orderbar__language__select-- hide-element">
+                        <li class="selected">
+                            <button type="submit" name="language" role="link" aria-current="false" id="es-desktop" lang="es" hreflang="es">
+                                Español                                        
+                            </button>
+                        </li>
+                        <li class="">
+                            <button type="submit" name="language" role="link" aria-current="false" id="en-desktop" lang="en" hreflang="en">
+                                English
+                            </button>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <h1>BUILD YOUR CAKE</h1>
+        
+        <form action="order.js">
+            <label for="NAME">NAME</label>
+            <input type="text" id="Name" name="Name" placeholder="Full Name">
+            <label for="Phone">PHONE</label>
+            <input type="number" id="Phone" name="Phone" placeholder="10 Digits">
+            <label for="Email">EMAIL</label>
+            <input type="text" id="Email" name="Email" placeholder="...@example.com">
+            <label for="DATE">PICK UP DATE</label>
+            <input type="datetime-local" id="Date" name="Date" class="inputform">
+
+            <br><br>
+
+            <label for="SELECT SIZE">SELECT SIZE</label>
+            <select id="size">
+                <option value="100">SMALL</option>
+                <option value="150">MEDIUM</option>
+                <option value="200">LARGE</option>
+            </select>
+            <label for="one or two flavors">HOW MANY FLAVOR TYPES?</label>
+            <input type="radio" id="one" name="one or two flavors" value="one">
+            <label for="one">ONE</label>
+            <input type="radio" id="two" name="one or two flavors" value="two">
+            <label for="two">TWO</label>
+            
+            <br><br>
+
+            <label for="Flavor 1">Flavor 1</label>
+            <select id="Flavor 1">
+                <option value="Vanilla Confetti">Vanilla Confetti</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Carrot">Carrot</option>
+                <option value="Red Velvet">Red Velvet</option>
+                <option value="Canoli">Canoli</option>   
+            </select>
+            
+            <label for="Flavor 2">Flavor 2</label>
+            <select id="Flavor 2">
+                <option value="Vanilla Confetti">Chocolate</option>
+                <option value="Chocolate">Vanilla Confetti</option>
+                <option value="Carrot">Carrot</option>
+                <option value="Red Velvet">Red Velvet</option>
+                <option value="Canoli">Canoli</option>
+            </select>
+
+            <br><br>
+
+            <label for="Decorations">PICK YOUR DECORATIONS:</label>
+            <input type="checkbox" id="Decorations1" name="Decorations1" value="Chocolate chips">
+            <label for="Decorations1">Chocolate Chips</label>
+            <input type="checkbox" id="Decorations2" name="Decorations2" value="Sprinkles ">
+            <label for="Decorations1">Sprinkles</label>
+            <input type="checkbox" id="Decorations3" name="Decorations3" value="Strawberries">
+            <label for="Decorations3">Strawberries</label>
+            <input type="checkbox" id="Decorations4" name="Decorations4" value="Fondant Stars">
+            <label for="Decorations4">Fondant Stars</label>
+            <input type="checkbox" id="Decorations5" name="Decorations5" value="Fondant Dots">
+            <label for="Decorations5">Fondant Dots</label>
+            <input type="checkbox" id="Decorations6" name="Decorations6" value="Butter cream">
+            <label for="Decorations6">Butter Cream</label>
+
+            <br><br>
+
+            <label for="SPECIAL MESSAGE">DO YOU WANT A SPECIAL MESSAGE ON THE TOP?</label>
+            <input type="text" id="Name" name="Name" placeholder="TYPE YOUR MESSAGE">
+            
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+    <footer class="footer">
+        <p class="contact">
+          &#169; Contact: 55 5555 5555 Email:
+          <a href="contact@cakekeria.com" class="contactemail" target="_blank">
+            contact@cakekeria.com
+          </a>
+          <br>
+            2305 E. 4th Street
+            Los Angeles, CA 90033          
+        </p>
+      </footer> 
+</html>
